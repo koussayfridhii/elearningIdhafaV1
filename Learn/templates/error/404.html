@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}about us{% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- 404
+    ================================================== -->
+    <div class="container my-10">
+        <!-- Illustrator -->
+        <img src="{% static 'assets/img/illustrations/illustration-12.svg'%}" alt="..." class="img-fluid mb-5 mb-md-9">
+
+        <div class="row">
+            <div class="col-xl-6 mx-auto text-center">
+                <h1 class="display-6">أوهه! الصفحة غير موجودة</h1>
+                <p class="mb-6">يبدو أننا لا نستطيع العثور على الصفحة التي تبحث عنها</p>
+
+                <form class="mb-5">
+                    <div class="input-group d-block d-md-flex bg-white p-1 rounded border">
+                        <input type="text" class="form-control w-100 w-md-auto form-control-sm rounded border-0 placeholder-1" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2">
+                        <div class="input-group-append ms-0">
+                            <button class="btn btn-sm btn-primary w-100 w-md-auto btn-wide rounded border-0" type="button" id="button-addon2">الإشتراك</button>
+                        </div>
+                    </div>
+                </form>
+
+                <a href="index.html" class="d-inline-block text-underline text-blue">العودة إلى المنزل</a>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
