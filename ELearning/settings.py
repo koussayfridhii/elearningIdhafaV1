@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-&=%ao-(xat!4-=*jjkgl%s&nj-$55%446m&5*lp0kxzmj4mc%)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -145,3 +145,6 @@ EMAIL_HOST_PASSWORD = 'Enter Password'
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
