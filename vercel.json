@@ -23,6 +23,9 @@
       {
         "src": "/(.*)",
         "dest": "elearningIdhafaV1/wsgi.py"
+      },
+      {
+        "cleanUrls": true
       }
     ]
   }
