@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "cleanUrls": true,
     "builds": [
       {
         "src": "elearningIdhafaV1/wsgi.py",
